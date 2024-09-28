@@ -1,0 +1,70 @@
+# Blog_Website_Bharat_Intern
+
+> A simple blog website to create, update and manage blogs and articles
+
+`Blog_Website_Bharat_Intern` is a simple [Node.js](https://nodejs.org/) web application for static content that includes a blog.
+It was created as the basis for [my own website](https://dlaa.me/), but everyone is welcome to use it.
+The implementation strives to be simple and free of unnecessary dependencies.
+
+## Goals
+
+- An easy way to create a simple, secure website with a blog
+- Support for text-based and photo-based blog formats
+- Easy authoring in HTML, Markdown (with code formatting), or JSON
+- Ordering of posts by publish date or content date
+- Easy customization of site layout and formatting
+- High resolution (2x) support for photo blog images
+- Support for Windows and Linux hosting with Node.js
+- Simple post format that separates content and metadata
+- Ability to author hidden posts and schedule a publish date
+- Ability to create posts that never show up in the timeline
+- Support for archive links and tagging of posts by category
+- Quick search of post content, including simple search queries
+- Automatic Twitter and Open Graph metadata for social media
+- Automatic cross-linking of related posts
+- No JavaScript requirement for client browsers
+
+
+## Instructions
+
+1. Install Node.js
+1. Fork and clone repository
+1. Create directory under `/sites` or use one of the samples
+1. Add static content to `/sites/yoursite/static`
+1. Add post JSON and content under `/sites/yoursite/posts`
+1. `npm install`
+1. `npm run compile`
+1. `npm start`
+1. Open <http://localhost:3000/> and verify
+1. Commit changes to repository
+1. Deploy repository to hosting service
+
+## Configuration
+
+- `SWWB_SITE_ROOT` Set to specify the site to use when serving content (ex: `./sites/sample-text`)
+- `SWWB_REDIRECT_TO_HTTPS` Set to `true` to redirect HTTP traffic to HTTPS and set an HSTS header
+- `SWWB_SHOW_FUTURE_POSTS` Set to `true` to show posts with a publish date in the future (good when authoring locally)
+- `SWWB_HOSTNAME_TOKEN` Set to change the replacement token for inserting host name in posts (RSS uses absolute URLs)
+- `SWWB_ACME_CHALLENGE` Set to specify the ACME challenge for [Let's Encrypt](https://letsencrypt.org/) (ex: `abc.123,def.456`)
+
+## Dependencies
+
+| Project      | Home Page                                    |
+|--------------|----------------------------------------------|
+| Express      | <https://expressjs.com/>                     |
+| React        | <https://reactjs.org/>                       |
+| Helmet       | <https://helmetjs.github.io/>                |
+| markdown-it  | <https://github.com/markdown-it/markdown-it> |
+| highlight.js | <https://highlightjs.org/>                   |
+| Lunr         | <https://lunrjs.com/>                        |
+| rss          | <https://github.com/dylang/node-rss>         |
+
+## Contributing
+
+- Open issue, discuss proposal
+- Fork and clone repository
+- Change code and update tests
+- `npm test`
+- `npm run lint`
+- Review changes
+- Send pull request
